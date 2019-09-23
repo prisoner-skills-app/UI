@@ -184,6 +184,7 @@ img {
   height: 100%;
   margin: 0 auto;
 }
+Eric-Figueroa
 .menu-closed {
   left: 100%;
 }
@@ -298,4 +299,16 @@ img {
 }
 #mobile-menu nav a:last-child {
   margin-bottom: 0;
+=======
+body {
+  border: 2px solid red;
+  width: 100%;
+}
+body .container {
+  max-width: 100%;
+  margin: auto;
+}
+body .container .banner {
+  border: 1px solid red;
+  margin: 2% auto;
 }
