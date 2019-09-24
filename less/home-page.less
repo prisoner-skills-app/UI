@@ -1,3 +1,37 @@
+// HOME PAGE
+.banner {
+	height: @banner-lg;
+	background: url('../img/banner-bg.jpg') no-repeat center center/cover;
+	.container {
+		.flex-col();
+		align-items: center;
+		justify-content: center;
+		h1 {
+			color: white;
+			font-size: 6rem;
+			text-align: center;
+
+			@media @tablet {
+				font-size: 4.5rem;
+			}
+		}
+		.buttons {
+			margin-top: 3rem;
+			a {
+				.btn();
+				font-size: 1.4rem;
+				color: inherit;
+				background-color: #ffffff;
+				text-decoration: none;
+
+				&:last-child {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+}
+
 .top-candidates {
 	padding: 5rem 0;
 
@@ -64,6 +98,85 @@
 					text-decoration: none;
 					border-radius: 0;
 					background-color: #e0e1e2;
+				}
+			}
+		}
+	}
+}
+
+// ABOUT PAGE
+#about {
+	.banner {
+		height: @banner-sm;
+	}
+	.intro {
+		padding: 5rem 0;
+	}
+
+	.extra-about {
+		padding: 5rem 0;
+		background-color: whitesmoke;
+	}
+}
+
+// CONTACT PAGE
+#contact-us {
+	.banner {
+		height: @banner-sm;
+	}
+	.contact {
+		padding: 5rem 0;
+		.container {
+			text-align: center;
+			form {
+				width: 60%;
+				margin: 0 auto;
+				.flex-col();
+				margin-top: 3rem;
+
+				@media @tablet {
+					width: 75%;
+				}
+
+				@media @mobile {
+					width: 100%;
+				}
+
+				input {
+					font-size: 1.4rem;
+					border: none;
+					padding: 0.5rem;
+					border-bottom: 1px solid #dededf;
+					margin-bottom: 2rem;
+				}
+
+				select {
+					option {
+					}
+					margin-bottom: 2rem;
+				}
+
+				textarea {
+					height: 8rem;
+					font-size: 1.4rem;
+					padding: 0.5rem;
+					border: 1px solid #dededf;
+					margin-bottom: 2rem;
+					border-radius: 0.25rem;
+				}
+
+				.buttons {
+					button {
+						.btn();
+						border: none;
+						font-size: 1.4rem;
+						cursor: pointer;
+
+						&:last-child {
+							margin-left: 2rem;
+							background-color: red;
+						}
+					}
 				}
 			}
 		}

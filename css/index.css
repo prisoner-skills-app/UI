@@ -127,6 +127,7 @@ table {
   border-spacing: 0;
 }
 * {
+  outline: none;
   box-sizing: border-box;
 }
 html {
@@ -181,7 +182,7 @@ img {
   margin-right: 2rem;
   text-decoration: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   #main-nav .container .logo {
     margin-left: auto;
   }
@@ -192,7 +193,7 @@ img {
   height: 100%;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   #main-nav .container .links {
     display: none;
   }
@@ -214,7 +215,7 @@ img {
 #main-nav .container .buttons {
   margin-left: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   #main-nav .container .buttons {
     display: none;
   }
@@ -235,7 +236,7 @@ img {
   width: 25px;
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   #main-nav .container .burger-menu {
     display: flex;
     margin-left: auto;
@@ -259,7 +260,7 @@ img {
   background-color: whitesmoke;
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   .mobile-nav {
     display: flex;
   }
@@ -275,6 +276,56 @@ img {
 }
 .nav-open {
   right: 0%;
+}
+#main-footer {
+  width: 100%;
+  height: 5rem;
+  background-color: whitesmoke;
+}
+#main-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-footer .container p {
+  padding: 0;
+}
+.banner {
+  height: 40vh;
+  background: url('../img/banner-bg.jpg') no-repeat center center / cover;
+}
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .container h1 {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .banner .container h1 {
+    font-size: 4.5rem;
+  }
+}
+.banner .container .buttons {
+  margin-top: 3rem;
+}
+.banner .container .buttons a {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #2987cd;
+  font-size: 1.4rem;
+  color: inherit;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+.banner .container .buttons a:last-child {
+  margin-left: 2rem;
 }
 .top-candidates {
   padding: 5rem 0;
@@ -352,4 +403,71 @@ img {
   text-decoration: none;
   border-radius: 0;
   background-color: #e0e1e2;
+}
+#about .banner {
+  height: 25vh;
+}
+#about .intro {
+  padding: 5rem 0;
+}
+#about .extra-about {
+  padding: 5rem 0;
+  background-color: whitesmoke;
+}
+#contact-us .banner {
+  height: 25vh;
+}
+#contact-us .contact {
+  padding: 5rem 0;
+}
+#contact-us .contact .container {
+  text-align: center;
+}
+#contact-us .contact .container form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+@media (max-width: 700px) {
+  #contact-us .contact .container form {
+    width: 75%;
+  }
+}
+@media (max-width: 625px) {
+  #contact-us .contact .container form {
+    width: 100%;
+  }
+}
+#contact-us .contact .container form input {
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid #dededf;
+  margin-bottom: 2rem;
+}
+#contact-us .contact .container form select {
+  margin-bottom: 2rem;
+}
+#contact-us .contact .container form textarea {
+  height: 8rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border: 1px solid #dededf;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+}
+#contact-us .contact .container form .buttons button {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #2987cd;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+#contact-us .contact .container form .buttons button:last-child {
+  margin-left: 2rem;
+  background-color: red;
 }
