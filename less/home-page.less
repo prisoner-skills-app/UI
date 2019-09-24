@@ -1,0 +1,71 @@
+.top-candidates {
+	padding: 5rem 0;
+
+	.container {
+		h2 {
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.candidates {
+			.flex-row();
+			justify-content: space-between;
+
+			@media @tablet {
+				.flex-col();
+				align-items: center;
+			}
+
+			.candidate {
+				width: 30%;
+				.flex-col();
+				border-radius: 0.25rem;
+				overflow: hidden;
+				box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+				@media @tablet {
+					width: 100%;
+					margin-bottom: 3rem;
+				}
+
+				h3 {
+					font-size: 1.8rem;
+					padding: 1rem;
+				}
+				p {
+					font-size: 1.4rem;
+					padding: 0 1rem;
+					margin-bottom: 1rem;
+				}
+				h4 {
+					font-size: 1.6rem;
+					padding: 0 1rem;
+					margin-bottom: 1rem;
+				}
+				.skills {
+					.flex-row();
+					flex-wrap: wrap;
+					padding: 0 1rem;
+					margin-bottom: 1rem;
+					li {
+						.btn();
+						color: inherit;
+						font-size: 1.2rem;
+						margin: 0 0.5rem 0.5rem 0;
+						background-color: #e8e8e8;
+					}
+				}
+				a {
+					.btn();
+					color: inherit;
+					font-size: 1.4rem;
+					text-align: center;
+					padding: 1rem 0.5rem;
+					text-decoration: none;
+					border-radius: 0;
+					background-color: #e0e1e2;
+				}
+			}
+		}
+	}
+}
