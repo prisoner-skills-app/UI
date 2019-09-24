@@ -232,6 +232,7 @@ img {
   margin-left: 2rem;
 }
 #main-nav .container .burger-menu {
+  width: 25px;
   display: none;
 }
 @media (max-width: 600px) {
