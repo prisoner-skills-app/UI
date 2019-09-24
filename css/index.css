@@ -329,7 +329,6 @@ body {
 }
 body .container-main {
   max-width: 100%;
-  border: 1px solid red;
 }
 body .container-main img {
   width: 100%;
@@ -347,8 +346,10 @@ body .container-main #one {
 }
 @media (max-width: 600px) {
   body .container-main #one {
-    top: 60%;
-    font-size: 2.7rem;
+    width: 100%;
+    top: 40%;
+    font-size: 3rem;
+    margin-left: 8%;
   }
 }
 body .container-main #two {
@@ -364,8 +365,10 @@ body .container-main #two {
 }
 @media (max-width: 600px) {
   body .container-main #two {
-    top: 70%;
-    font-size: 2.7rem;
+    width: 100%;
+    top: 45%;
+    font-size: 3rem;
+    margin-left: 8%;
   }
 }
 body .container-main .btns {
@@ -380,10 +383,16 @@ body .container-main .btns {
 }
 @media (max-width: 600px) {
   body .container-main .btns {
-    top: 85%;
+    top: 60%;
   }
 }
 body .container-main .btns button {
-  margin-right: 1.8rem;
+  margin-right: 1.5rem;
   padding: 0.5rem;
+}
+@media (max-width: 600px) {
+  body .container-main .btns button {
+    padding: 0.05rem;
+    width: 100%;
+  }
 }
