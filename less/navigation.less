@@ -1,0 +1,87 @@
+#main-nav {
+	height: 50px;
+	background-color: white;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	.container {
+		.flex-row();
+		align-items: center;
+
+		.logo {
+			color: inherit;
+			font-size: 2rem;
+			margin-right: 2rem;
+			text-decoration: none;
+		}
+
+		.links {
+			.flex-row();
+			height: 100%;
+			align-items: center;
+
+			a {
+				.flex-row();
+				height: 100%;
+				color: inherit;
+				padding: 0 1rem;
+				font-size: 1.4rem;
+				align-items: center;
+				text-decoration: none;
+				border-left: 1px solid #dededf;
+
+				&:last-child {
+					border-right: 1px solid #dededf;
+				}
+			}
+		}
+
+		.buttons {
+			margin-left: auto;
+
+			a {
+				color: inherit;
+				font-size: 1.4rem;
+				text-decoration: none;
+
+				&:last-child {
+					.btn();
+					margin-left: 2rem;
+				}
+			}
+		}
+
+		.burger-menu {
+			display: none;
+			i {
+				font-size: 2.5rem;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.mobile-nav {
+	right: -100%;
+	top: 50px;
+	width: 100%;
+	.flex-col();
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	height: calc(100% - 50px);
+	transition: all 0.3s ease;
+	background-color: whitesmoke;
+	a {
+		color: inherit;
+		font-size: 2rem;
+		text-decoration: none;
+		margin-bottom: 3rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.nav-open {
+	right: 0%;
+}
