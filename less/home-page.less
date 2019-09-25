@@ -113,68 +113,84 @@
 		padding: 5rem 0;
 	}
 
-	.extra-about {
+	.overview {
 		padding: 5rem 0;
 		background-color: whitesmoke;
 	}
-}
 
-// CONTACT PAGE
-#contact-us {
-	.banner {
-		height: @banner-sm;
-	}
-	.contact {
+	.team {
 		padding: 5rem 0;
 		.container {
-			text-align: center;
-			form {
-				width: 60%;
-				margin: 0 auto;
-				.flex-col();
+			h2 {
+			}
+			p {
+			}
+			.members {
 				margin-top: 3rem;
-
-				@media @tablet {
-					width: 75%;
-				}
-
-				@media @mobile {
-					width: 100%;
-				}
-
-				input {
-					font-size: 1.4rem;
-					border: none;
-					padding: 0.5rem;
-					border-bottom: 1px solid #dededf;
+				.flex-col();
+				.row {
+					.flex-row();
+					flex-wrap: wrap;
 					margin-bottom: 2rem;
-				}
+					justify-content: space-between;
 
-				select {
-					option {
+					&:last-child {
+						margin-bottom: 0;
 					}
-					margin-bottom: 2rem;
-				}
+					.member {
+						width: 23%;
+						text-align: center;
+						padding: 2rem 1rem;
+						border-radius: 0.25rem;
+						background-color: white;
+						transition: all 0.3s ease;
+						box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 
-				textarea {
-					height: 8rem;
-					font-size: 1.4rem;
-					padding: 0.5rem;
-					border: 1px solid #dededf;
-					margin-bottom: 2rem;
-					border-radius: 0.25rem;
-				}
+						@media @tablet {
+							width: 48%;
 
-				.buttons {
-					button {
-						.btn();
-						border: none;
-						font-size: 1.4rem;
-						cursor: pointer;
+							&:last-child,
+							&:nth-child(3) {
+								margin-top: 2rem;
+							}
+						}
 
-						&:last-child {
-							margin-left: 2rem;
-							background-color: red;
+						&:hover {
+							background-color: whitesmoke;
+						}
+
+						.avatar {
+							width: 7.5rem;
+							height: 7.5rem;
+							margin: 0 auto;
+							border-radius: 50%;
+							margin-bottom: 2rem;
+							background-color: orange;
+						}
+
+						h3 {
+							font-size: 1.6rem;
+							margin-bottom: 0.5rem;
+						}
+
+						p {
+							padding: 0;
+							margin-bottom: 1rem;
+						}
+
+						.links {
+							a {
+								margin-right: 1rem;
+								color: inherit;
+								text-decoration: none;
+								cursor: pointer;
+								&:last-child {
+									margin-right: 0;
+								}
+								i {
+									font-size: 2rem;
+								}
+							}
 						}
 					}
 				}
