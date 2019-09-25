@@ -137,8 +137,6 @@ html,
 body {
   color: #1b1c1d;
   font-family: 'Roboto', sans-serif;
-}
-body {
   overflow-x: hidden;
 }
 h1 {
@@ -167,60 +165,8 @@ img {
   height: 100%;
   margin: 0 auto;
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  color: #1b1c1d;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Indie Flower', cursive;
-}
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.container {
-  max-width: 800px;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-#main-header {
-  height: 50px;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-}
-#main-header .container {
-  padding: 0 1rem;
-  margin: 0 auto;
+.nav-open {
+  right: 0%;
 }
 #main-nav {
   height: 50px;
@@ -231,15 +177,13 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: auto;
 }
-.mobile-nav a {
+#main-nav .container .logo {
   color: inherit;
   font-size: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
-  margin-bottom: 3rem;
 }
-<<<<<<< HEAD
 @media (max-width: 625px) {
   #main-nav .container .logo {
     margin-left: auto;
@@ -255,98 +199,85 @@ img {
   #main-nav .container .links {
     display: none;
   }
-=======
-body {
-  width: 100%;
->>>>>>> 2b013ac12da1e694384bce7110618e8272a430f2
 }
-body .container-main {
-  max-width: 100%;
+#main-nav .container .links a {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  color: inherit;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  align-items: center;
+  text-decoration: none;
+  border-left: 1px solid #dededf;
 }
-body .container-main img {
-  width: 100%;
-  height: 312px;
+#main-nav .container .links a:last-child {
+  border-right: 1px solid #dededf;
 }
-body .container-main #one {
-  color: whitesmoke;
-  font-family: Roboto;
-  font-size: 4.2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 25%;
+#main-nav .container .buttons {
+  margin-left: auto;
 }
-<<<<<<< HEAD
 @media (max-width: 625px) {
   #main-nav .container .buttons {
     display: none;
-=======
-@media (max-width: 600px) {
-  body .container-main #one {
-    width: 100%;
-    top: 40%;
-    font-size: 3rem;
-    margin-left: 8%;
->>>>>>> 2b013ac12da1e694384bce7110618e8272a430f2
   }
 }
-body .container-main #two {
-  color: whitesmoke;
-  padding-top: 20px;
-  font-family: Roboto;
-  font-size: 4.2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 30%;
+#main-nav .container .buttons a {
+  color: inherit;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
-<<<<<<< HEAD
+#main-nav .container .buttons a:last-child {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #2987cd;
+  margin-left: 2rem;
+}
+#main-nav .container .burger-menu {
+  width: 25px;
+  display: none;
+}
 @media (max-width: 625px) {
   #main-nav .container .burger-menu {
     display: flex;
     margin-left: auto;
-=======
-@media (max-width: 600px) {
-  body .container-main #two {
-    width: 100%;
-    top: 45%;
-    font-size: 3rem;
-    margin-left: 8%;
->>>>>>> 2b013ac12da1e694384bce7110618e8272a430f2
   }
 }
-body .container-main .btns {
+#main-nav .container .burger-menu i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.mobile-nav {
+  right: -100%;
+  top: 50px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
+  height: calc(100% - 50px);
+  transition: all 0.3s ease;
+  background-color: red;
+  display: none;
 }
-<<<<<<< HEAD
 @media (max-width: 625px) {
   .mobile-nav {
     display: flex;
-=======
-@media (max-width: 600px) {
-  body .container-main .btns {
-    top: 60%;
->>>>>>> 2b013ac12da1e694384bce7110618e8272a430f2
   }
 }
-body .container-main .btns button {
-  margin-right: 1.5rem;
-  padding: 0.5rem;
+.mobile-nav a {
+  color: inherit;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-bottom: 3rem;
 }
-@media (max-width: 600px) {
-  body .container-main .btns button {
-    padding: 0.05rem;
-    width: 100%;
-  }
+.mobile-nav a:last-child {
+  margin-bottom: 0;
+}
+.nav-open {
+  right: 0%;
 }
 .banner {
   height: 40vh;
