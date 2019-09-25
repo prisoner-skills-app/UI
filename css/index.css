@@ -170,6 +170,8 @@ img {
 }
 #main-nav {
   height: 50px;
+  z-index: 10;
+  position: relative;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -250,16 +252,16 @@ img {
 }
 .mobile-nav {
   right: -100%;
-  top: 50px;
+  top: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   align-items: center;
   justify-content: center;
-  height: calc(100% - 50px);
+  height: 100%;
   transition: all 0.3s ease;
-  background-color: red;
+  background-color: whitesmoke;
   display: none;
 }
 @media (max-width: 625px) {
@@ -279,30 +281,31 @@ img {
 .nav-open {
   right: 0%;
 }
-.banner {
+#home .banner {
   height: 40vh;
+  margin-top: -1rem;
   background: url('../img/banner-bg.jpg') no-repeat center center / cover;
 }
-.banner .container {
+#home .banner .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.banner .container h1 {
+#home .banner .container h1 {
   color: white;
   font-size: 6rem;
   text-align: center;
 }
 @media (max-width: 700px) {
-  .banner .container h1 {
+  #home .banner .container h1 {
     font-size: 4.5rem;
   }
 }
-.banner .container .buttons {
+#home .banner .container .buttons {
   margin-top: 3rem;
 }
-.banner .container .buttons a {
+#home .banner .container .buttons a {
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
@@ -312,7 +315,7 @@ img {
   background-color: #ffffff;
   text-decoration: none;
 }
-.banner .container .buttons a:last-child {
+#home .banner .container .buttons a:last-child {
   margin-left: 2rem;
 }
 .top-candidates {
@@ -393,7 +396,40 @@ img {
   background-color: #e0e1e2;
 }
 #about .banner {
-  height: 25vh;
+  height: 40vh;
+  background: url('../img/banner-bg.jpg') no-repeat center center / cover;
+}
+#about .banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about .banner .container h1 {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #about .banner .container h1 {
+    font-size: 4.5rem;
+  }
+}
+#about .banner .container .buttons {
+  margin-top: 3rem;
+}
+#about .banner .container .buttons a {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #2987cd;
+  font-size: 1.4rem;
+  color: inherit;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+#about .banner .container .buttons a:last-child {
+  margin-left: 2rem;
 }
 #about .intro {
   padding: 5rem 0;
