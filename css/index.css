@@ -318,26 +318,44 @@ img {
 #home .banner .container .buttons a:last-child {
   margin-left: 2rem;
 }
-.top-candidates {
-  padding: 5rem 0;
+#home .intro .container {
+  padding: 7rem 0;
+  text-align: center;
 }
-.top-candidates .container h2 {
+#home .intro .container h2 {
+  margin-bottom: 1rem;
+}
+#home .intro .container p {
+  margin-bottom: 2rem;
+}
+#home .intro .container a {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #2987cd;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+#home .top-candidates {
+  padding: 7rem 0;
+}
+#home .top-candidates .container h2 {
   text-align: center;
   margin-bottom: 3rem;
 }
-.top-candidates .container .candidates {
+#home .top-candidates .container .candidates {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 700px) {
-  .top-candidates .container .candidates {
+  #home .top-candidates .container .candidates {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.top-candidates .container .candidates .candidate {
+#home .top-candidates .container .candidates .candidate {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -346,33 +364,33 @@ img {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 700px) {
-  .top-candidates .container .candidates .candidate {
+  #home .top-candidates .container .candidates .candidate {
     width: 100%;
     margin-bottom: 3rem;
   }
 }
-.top-candidates .container .candidates .candidate h3 {
+#home .top-candidates .container .candidates .candidate h3 {
   font-size: 1.8rem;
   padding: 1rem;
 }
-.top-candidates .container .candidates .candidate p {
+#home .top-candidates .container .candidates .candidate p {
   font-size: 1.4rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
 }
-.top-candidates .container .candidates .candidate h4 {
+#home .top-candidates .container .candidates .candidate h4 {
   font-size: 1.6rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
 }
-.top-candidates .container .candidates .candidate .skills {
+#home .top-candidates .container .candidates .candidate .skills {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 1rem;
   margin-bottom: 1rem;
 }
-.top-candidates .container .candidates .candidate .skills li {
+#home .top-candidates .container .candidates .candidate .skills li {
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
@@ -382,7 +400,7 @@ img {
   margin: 0 0.5rem 0.5rem 0;
   background-color: #e8e8e8;
 }
-.top-candidates .container .candidates .candidate a {
+#home .top-candidates .container .candidates .candidate a {
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
@@ -432,14 +450,23 @@ img {
   margin-left: 2rem;
 }
 #about .intro {
-  padding: 5rem 0;
+  padding: 7rem 0;
+}
+#about .intro .container h2 {
+  margin-bottom: 1rem;
 }
 #about .overview {
-  padding: 5rem 0;
+  padding: 7rem 0;
   background-color: whitesmoke;
 }
+#about .overview .container h2 {
+  margin-bottom: 1rem;
+}
 #about .team {
-  padding: 5rem 0;
+  padding: 7rem 0;
+}
+#about .team .container h2 {
+  margin-bottom: 1rem;
 }
 #about .team .container .members {
   margin-top: 3rem;
@@ -483,7 +510,7 @@ img {
   margin: 0 auto;
   border-radius: 50%;
   margin-bottom: 2rem;
-  background-color: orange;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 #about .team .container .members .row .member h3 {
   font-size: 1.6rem;
@@ -504,6 +531,30 @@ img {
 }
 #about .team .container .members .row .member .links a i {
   font-size: 2rem;
+}
+#about .team .container .members .row #brett .avatar {
+  background: url('../img/brett-pic.jpg') no-repeat center center / cover;
+}
+#about .team .container .members .row #tatiana .avatar {
+  background: url('../img/tatiana-pic.png') no-repeat center center / cover;
+}
+#about .team .container .members .row #luis .avatar {
+  background: url('../img/luis-pic.jpg') no-repeat center center / cover;
+}
+#about .team .container .members .row #lucas .avatar {
+  background: url('../img/lucas-pic.jpg') no-repeat center center / cover;
+}
+#about .team .container .members .row #eric .avatar {
+  background: url('../img/eric-pic.png') no-repeat center center / cover;
+}
+#about .team .container .members .row #oluwatola .avatar {
+  background: url('../img/oluwatola-pic.jpg') no-repeat center center / cover;
+}
+#about .team .container .members .row #brian .avatar {
+  background: url('../img/brian-pic.png') no-repeat center center / cover;
+}
+#about .team .container .members .row #david .avatar {
+  background: url('../img/david-pic.jpeg') no-repeat center center / cover;
 }
 #main-footer {
   width: 100%;
