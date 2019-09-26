@@ -181,15 +181,19 @@ img {
   align-items: center;
 }
 #main-nav .container .logo {
-  color: inherit;
-  font-size: 2rem;
   margin-right: 2rem;
-  text-decoration: none;
 }
 @media (max-width: 625px) {
   #main-nav .container .logo {
     margin-left: auto;
+    position: relative;
+    left: 2.5rem;
   }
+}
+#main-nav .container .logo img {
+  width: 75px;
+  position: relative;
+  top: 0.25rem;
 }
 #main-nav .container .links {
   display: flex;
@@ -224,6 +228,10 @@ img {
     display: none;
   }
 }
+#main-nav .container .buttons span {
+  color: #aaa;
+  font-size: 1.2rem;
+}
 #main-nav .container .buttons a {
   color: inherit;
   font-size: 1.4rem;
@@ -234,7 +242,7 @@ img {
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
   background-color: #2987cd;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 #main-nav .container .burger-menu {
   width: 25px;
@@ -282,7 +290,7 @@ img {
   right: 0%;
 }
 #home .banner {
-  height: 40vh;
+  height: 50vh;
   margin-top: -1rem;
   background: url('../img/banner-bg.jpg') no-repeat center center / cover;
 }
@@ -293,9 +301,11 @@ img {
   justify-content: center;
 }
 #home .banner .container h1 {
+  line-height: 7rem;
   color: white;
   font-size: 6rem;
   text-align: center;
+  font-weight: 700;
 }
 @media (max-width: 700px) {
   #home .banner .container h1 {
@@ -323,6 +333,7 @@ img {
   text-align: center;
 }
 #home .intro .container h2 {
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 #home .intro .container p {
@@ -340,6 +351,7 @@ img {
   padding: 7rem 0;
 }
 #home .top-candidates .container h2 {
+  font-weight: 500;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -370,6 +382,7 @@ img {
   }
 }
 #home .top-candidates .container .candidates .candidate h3 {
+  font-weight: 500;
   font-size: 1.8rem;
   padding: 1rem;
 }
@@ -414,7 +427,7 @@ img {
   background-color: #e0e1e2;
 }
 #about .banner {
-  height: 40vh;
+  height: 50vh;
   background: url('../img/banner-bg.jpg') no-repeat center center / cover;
 }
 #about .banner .container {
@@ -424,9 +437,12 @@ img {
   justify-content: center;
 }
 #about .banner .container h1 {
+  line-height: 7rem;
+  font-weight: 700;
   color: white;
   font-size: 6rem;
   text-align: center;
+  font-weight: bold;
 }
 @media (max-width: 700px) {
   #about .banner .container h1 {
@@ -453,6 +469,7 @@ img {
   padding: 7rem 0;
 }
 #about .intro .container h2 {
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 #about .overview {
@@ -460,12 +477,14 @@ img {
   background-color: whitesmoke;
 }
 #about .overview .container h2 {
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 #about .team {
   padding: 7rem 0;
 }
 #about .team .container h2 {
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 #about .team .container .members {
@@ -513,11 +532,13 @@ img {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 #about .team .container .members .row .member h3 {
+  font-weight: 500;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 #about .team .container .members .row .member p {
   padding: 0;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 #about .team .container .members .row .member .links a {
